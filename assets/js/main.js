@@ -13,4 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
   }
+
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href]');
+    if (!link || typeof ym !== 'function') return;
+    const href = link.getAttribute('href');
+    if (href.startsWith('https://t.me/juliareprintseva') && !href.includes('juliareprintseva_roman')) {
+      ym(111510411, 'reachGoal', 'contact_telegram');
+    } else if (href.startsWith('mailto:')) {
+      ym(111510411, 'reachGoal', 'contact_email');
+    }
+  });
 });
