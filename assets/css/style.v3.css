@@ -264,6 +264,7 @@ header.site{position:sticky;top:0;z-index:50;background:var(--bg);}
 .grid-3-cards > div:last-child{border-right:0;padding-right:0;}
 .grid-3-cards h4{font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--accent);margin-bottom:10px;font-weight:400;text-transform:none;}
 .grid-3-cards p{margin:0;font-size:.98rem;}
+.participate-col-2{border-left:1px solid var(--line);padding-left:36px;}
 
 /* Numbered */
 .numbered{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);}
@@ -325,6 +326,7 @@ footer.site .foot-row{display:flex;justify-content:space-between;flex-wrap:wrap;
 @media (max-width: 900px){
   .hero-top{flex-direction:column;align-items:flex-start;gap:24px;}
   .two-col,.two-col.even,.author-grid,.event-grid{grid-template-columns:1fr;gap:36px;}
+  .participate-col-2{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:36px;}
   .steps{grid-template-columns:1fr;}
   .step{border-right:0;border-bottom:1px solid var(--line);padding:28px 0;}
   .step:last-child{border-bottom:0;}
