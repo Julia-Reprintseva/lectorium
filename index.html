@@ -55,7 +55,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#1a1a1a">
 
-<link rel="stylesheet" href="assets/css/style.v3.css?v=2">
+<link rel="stylesheet" href="assets/css/style.v3.css?v=3">
 </head>
 <body>
 
@@ -215,16 +215,267 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
   <!-- PAST / UPCOMING EVENTS -->
   <section id="events" class="section section-alt">
     <div class="container">
-      <div class="section-head">
-        <div class="kicker">Прошедшие встречи</div>
+
+      <div class="statement-photo statement-cover full-bleed" style="margin-top:-130px;">
+        <div class="statement-bg"><img src="assets/img/bg-lamp.png" alt="" style="object-position:80% center;"></div>
+        <div class="container">
+          <p class="statement-heading">Заходите из&nbsp;настоящего&nbsp;— поговорить о&nbsp;будущем.</p>
+        </div>
+        <a href="#upcoming" class="statement-scroll-cue" aria-label="Пролистать к ближайшим встречам">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 9L12 17L20 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="upcoming-group" id="upcoming">
+        <div class="section-head" style="margin-top:80px;">
+          <div class="kicker">Скоро</div>
+          <h2>Ближайшие встречи</h2>
+        </div>
+
+        <div class="cal-grid">
+
+          <div class="cal-card" role="button" tabindex="0" onclick="lecEvent.open('ev-avetisyan')" onkeydown="if(event.key==='Enter'){lecEvent.open('ev-avetisyan')}">
+            <img class="cal-avatar" src="assets/img/speaker-avetisyan-card.jpg" alt="Манвел Аветисян">
+            <div class="cal-info">
+              <span class="cal-format">12 сентября · Офлайн · <a href="https://new.tmuseum.ru/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Музей</a></span>
+              <span class="cal-name">Манвел Аветисян</span>
+              <span class="cal-topic">«Робот решит вам уравнение, но не поднимет с пола носок»</span>
+            </div>
+          </div>
+
+          <div class="cal-card" role="button" tabindex="0" onclick="lecEvent.open('ev-trofimenko')" onkeydown="if(event.key==='Enter'){lecEvent.open('ev-trofimenko')}">
+            <span class="cal-avatar cal-photo-fallback">КТ</span>
+            <div class="cal-info">
+              <span class="cal-format">Дата уточняется · Офлайн · <a href="https://new.tmuseum.ru/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Музей</a></span>
+              <span class="cal-name">Константин Трофименко</span>
+              <span class="cal-topic">«ИИ и городской транспорт: масштабируемость и безопасность»</span>
+            </div>
+          </div>
+
+          <div class="cal-card" role="button" tabindex="0" onclick="lecEvent.open('ev-kibina')" onkeydown="if(event.key==='Enter'){lecEvent.open('ev-kibina')}">
+            <span class="cal-avatar cal-photo-fallback">ИК</span>
+            <div class="cal-info">
+              <span class="cal-format">Дата уточняется · Офлайн · <a href="https://new.tmuseum.ru/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Музей</a></span>
+              <span class="cal-name">Ирина Кибина</span>
+              <span class="cal-topic">«Кто теперь думает, когда думаю я?» — человеческое суждение, авторство мысли и ответственность в эпоху ИИ</span>
+            </div>
+          </div>
+
+          <div class="cal-card" role="button" tabindex="0" onclick="lecEvent.open('ev-smetnev')" onkeydown="if(event.key==='Enter'){lecEvent.open('ev-smetnev')}">
+            <span class="cal-avatar cal-photo-fallback">ДС</span>
+            <div class="cal-info">
+              <span class="cal-format">Дата уточняется · Офлайн · <a href="https://new.tmuseum.ru/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Музей</a></span>
+              <span class="cal-name">Денис Сметнёв</span>
+              <span class="cal-topic">Тема уточняется</span>
+            </div>
+          </div>
+
+          <div class="cal-card" role="button" tabindex="0" onclick="lecEvent.open('ev-batrakov')" onkeydown="if(event.key==='Enter'){lecEvent.open('ev-batrakov')}">
+            <img class="cal-avatar" src="assets/img/speaker-batrakov.jpg" alt="Игорь Батраков">
+            <div class="cal-info">
+              <span class="cal-format">Дата уточняется · Офлайн · <a href="https://new.tmuseum.ru/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Музей</a></span>
+              <span class="cal-name">Игорь Батраков</span>
+              <span class="cal-topic">Тема уточняется (в прошлый раз — «Claude Code для непрограммистов»)</span>
+            </div>
+          </div>
+
+          <div class="cal-card" role="button" tabindex="0" onclick="lecEvent.open('ev-osadchiy')" onkeydown="if(event.key==='Enter'){lecEvent.open('ev-osadchiy')}">
+            <span class="cal-avatar cal-photo-fallback">АО</span>
+            <div class="cal-info">
+              <span class="cal-format">Дата уточняется · Офлайн · <a href="https://new.tmuseum.ru/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Музей</a></span>
+              <span class="cal-name">Алексей Осадчий</span>
+              <span class="cal-topic">Тема уточняется</span>
+            </div>
+          </div>
+
+          <div class="cal-card" role="button" tabindex="0" onclick="lecEvent.open('ev-feopentov')" onkeydown="if(event.key==='Enter'){lecEvent.open('ev-feopentov')}">
+            <img class="cal-avatar" src="assets/img/speaker-feopentov.jpg" alt="Максим Феопентов">
+            <div class="cal-info">
+              <span class="cal-format">Дата уточняется · Офлайн · <a href="https://new.tmuseum.ru/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Музей</a></span>
+              <span class="cal-name">Максим Феопентов</span>
+              <span class="cal-topic">«ИИ без иллюзий: негативизм, завышенные ожидания и реальность крупного энтерпрайза»</span>
+            </div>
+          </div>
+
+          <div class="cal-card" role="button" tabindex="0" onclick="lecEvent.open('ev-fishman')" onkeydown="if(event.key==='Enter'){lecEvent.open('ev-fishman')}">
+            <span class="cal-avatar cal-photo-fallback">ВФ</span>
+            <div class="cal-info">
+              <span class="cal-format">Дата уточняется · Офлайн · <a href="https://new.tmuseum.ru/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Музей</a></span>
+              <span class="cal-name">Вениамин Фишман</span>
+              <span class="cal-topic">Тема уточняется</span>
+            </div>
+          </div>
+
+          <a href="https://t.me/juliareprintseva" target="_blank" rel="noopener" class="cal-card cal-card-cta">
+            <span class="cal-avatar cal-photo-fallback cal-cta-icon">+</span>
+            <div class="cal-info">
+              <span class="cal-format">Станьте спикером</span>
+              <span class="cal-name">Здесь может быть ваше имя</span>
+              <span class="cal-topic">Расскажите нам о своей теме — напишите в Telegram</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <dialog id="ev-avetisyan" class="event-modal">
+        <div class="event-modal-head"><button type="button" class="event-modal-close" onclick="lecEvent.close(this)" aria-label="Закрыть">✕</button></div>
+        <div class="event-modal-body">
+          <div class="event-speaker">
+            <img class="avatar" src="assets/img/speaker-avetisyan-card.jpg" alt="Манвел Аветисян">
+            <div>
+              <div class="name">Манвел Аветисян</div>
+              <div class="role">Директор по развитию прикладных проектов Института искусственного интеллекта AIRI, ранее — инженер-программист Google</div>
+            </div>
+          </div>
+          <h2 class="modal-topic">«Робот решит вам уравнение, но не поднимет с пола носок»</h2>
+          <p class="muted-line event-date-line" style="margin:0 0 20px;">12 сентября · Офлайн, Музей техники Вадима Задорожного</p>
+          <p>Ещё в начале двухтысячных японский робот ASIMO ходил по сцене, брал предметы и здоровался с залом. Прошло двадцать лет — и вот парадокс: тело у роботов, по сути, давно готово, а управлять им мы так и не научились. Железо есть — а мозгов не хватает.</p>
+          <img src="assets/img/speaker-avetisyan-hero.jpg" alt="Манвел Аветисян на выступлении" style="width:100%;max-width:320px;float:left;margin:0 24px 16px 0;border-radius:4px;">
+          <p>Причём удивительным образом. Искусственный интеллект давно щёлкает задачи, за которые людям выдают учёные степени, — но до сих пор не может уверенно поднять с пола носок. У этого есть имя: парадокс Моравека. Высокое мышление — логика, анализ, вычисления — даётся машине сравнительно легко, а простейшие движения — увидеть, дотянуться, удержать — почти нет.</p>
+          <p>Все ждут момента технологической сингулярности — когда ИИ начнёт совершенствовать сам себя и вырвется вперёд. Манвел Аветисян считает, что первыми до этой точки дойдут не чат-боты, а роботы — и гораздо раньше, чем принято думать. Причина в природе задачи: в физическом мире успех и провал очевидны — робот либо удержал предмет, либо уронил. А раз результат легко измерить, машины можно обучать распределённо и давать им обмениваться опытом друг с другом.</p>
+          <p>Что же им мешает? Не тело и не мозг, а данные. Для текстов и картинок в интернете — океан примеров, а для движений в реальном мире почти ничего.</p>
+          <p>Об этом — на лекции <span class="name-accent">Манвела Аветисяна</span>. Он работал в Google, Sber AI Lab и Институте искусственного интеллекта AIRI, разрабатывал ИИ, который распознаёт инсульт и ковид. Разберёмся, что вообще сейчас происходит в робототехнике, поговорим про VLA — модели нового поколения, которые одновременно видят, понимают команду человека и превращают её в движение — и выясним, почему революцию роботов тормозит не восстание машин, а обычный носок на полу.</p>
+          <a href="#tickets-cta" class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="lecEvent.close(this)">Зарегистрироваться</a>
+        </div>
+      </dialog>
+
+      <dialog id="ev-kibina" class="event-modal">
+        <div class="event-modal-head"><button type="button" class="event-modal-close" onclick="lecEvent.close(this)" aria-label="Закрыть">✕</button></div>
+        <div class="event-modal-body">
+          <div class="event-speaker">
+            <span class="avatar-fallback">ИК</span>
+            <div>
+              <div class="name">Ирина Кибина</div>
+              <div class="role">Преподаватель, бизнес-тренер, ментор (с 2010). Ранее — зам. гендиректора RUSATOM Overseas, вице-президент ТНК-BP и EVRAZ Group, топ-менеджер SUN Interbrew, директор управления Сбербанка</div>
+            </div>
+          </div>
+          <h2 class="modal-topic">«Кто теперь думает, когда думаю я?» — человеческое суждение, авторство мысли и ответственность в эпоху ИИ</h2>
+          <p class="muted-line event-date-line" style="margin:0 0 20px;">Дата уточняется · Офлайн, Музей техники Вадима Задорожного</p>
+          <p>Полный анонс встречи скоро появится здесь. Если тема суждения и ответственности в эпоху ИИ вам интересна — напишите, сообщим о точной дате первыми.</p>
+          <a href="#tickets-cta" class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="lecEvent.close(this)">Зарегистрироваться</a>
+        </div>
+      </dialog>
+
+      <dialog id="ev-feopentov" class="event-modal">
+        <div class="event-modal-head"><button type="button" class="event-modal-close" onclick="lecEvent.close(this)" aria-label="Закрыть">✕</button></div>
+        <div class="event-modal-body">
+          <div class="event-speaker">
+            <img class="avatar" src="assets/img/speaker-feopentov.jpg" alt="Максим Феопентов">
+            <div>
+              <div class="name">Максим Феопентов</div>
+              <div class="role">Директор по развитию цифровых технологий металлургической компании «ЕВРАЗ»</div>
+            </div>
+          </div>
+          <h2 class="modal-topic">«ИИ без иллюзий: негативизм, завышенные ожидания и реальность крупного энтерпрайза»</h2>
+          <p class="muted-line event-date-line" style="margin:0 0 20px;">Дата уточняется · Офлайн, Музей техники Вадима Задорожного</p>
+          <p>Взгляд изнутри большой индустриальной компании на применение ИИ: что происходит в «кровавом энтерпрайзе», где нет хайпа, а есть процессы, бюджеты, безопасность и ответственность.</p>
+          <p class="muted-line">Полный анонс встречи скоро появится здесь.</p>
+          <a href="#tickets-cta" class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="lecEvent.close(this)">Зарегистрироваться</a>
+        </div>
+      </dialog>
+
+      <dialog id="ev-trofimenko" class="event-modal">
+        <div class="event-modal-head"><button type="button" class="event-modal-close" onclick="lecEvent.close(this)" aria-label="Закрыть">✕</button></div>
+        <div class="event-modal-body">
+          <div class="event-speaker">
+            <span class="avatar-fallback">КТ</span>
+            <div>
+              <div class="name">Константин Трофименко</div>
+              <div class="role">Директор Центра исследований «Умного города» НИУ ВШЭ</div>
+            </div>
+          </div>
+          <h2 class="modal-topic">«ИИ и городской транспорт: масштабируемость и безопасность»</h2>
+          <p class="muted-line event-date-line" style="margin:0 0 20px;">Дата уточняется · Офлайн, Музей техники Вадима Задорожного</p>
+          <p>Полный анонс встречи скоро появится здесь. Если тема города и ИИ вам интересна — напишите, сообщим о дате первыми.</p>
+          <a href="#tickets-cta" class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="lecEvent.close(this)">Зарегистрироваться</a>
+        </div>
+      </dialog>
+
+      <dialog id="ev-batrakov" class="event-modal">
+        <div class="event-modal-head"><button type="button" class="event-modal-close" onclick="lecEvent.close(this)" aria-label="Закрыть">✕</button></div>
+        <div class="event-modal-body">
+          <div class="event-speaker">
+            <img class="avatar" src="assets/img/speaker-batrakov.jpg" alt="Игорь Батраков">
+            <div>
+              <div class="name">Игорь Батраков</div>
+              <div class="role">Директор по информационным технологиям «Спектрасофт», предприниматель и специалист по ИИ</div>
+            </div>
+          </div>
+          <p class="muted-line event-date-line" style="margin:0 0 20px;">Дата и тема уточняются · Офлайн, Музей техники Вадима Задорожного</p>
+          <p>Новая встреча с Игорем — уже офлайн, в музее (в мае он же провёл наш онлайн-воркшоп <a href="events/batrakov-arhiv/" target="_blank" rel="noopener">«Claude Code для непрограммистов»</a>). Формат готовится.</p>
+          <a href="#tickets-cta" class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="lecEvent.close(this)">Зарегистрироваться</a>
+        </div>
+      </dialog>
+
+      <dialog id="ev-smetnev" class="event-modal">
+        <div class="event-modal-head"><button type="button" class="event-modal-close" onclick="lecEvent.close(this)" aria-label="Закрыть">✕</button></div>
+        <div class="event-modal-body">
+          <div class="event-speaker">
+            <span class="avatar-fallback">ДС</span>
+            <div>
+              <div class="name">Денис Сметнёв</div>
+              <div class="role">Сооснователь Skyeng и маркетингового агентства uForce, предприниматель и практик в области AI-маркетинга</div>
+            </div>
+          </div>
+          <p class="muted-line event-date-line" style="margin:0 0 20px;">Дата уточняется · Офлайн, Музей техники Вадима Задорожного</p>
+          <p>Полный анонс встречи скоро появится здесь. Если тема ИИ в маркетинге вам интересна — напишите, сообщим о дате первыми.</p>
+          <a href="#tickets-cta" class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="lecEvent.close(this)">Зарегистрироваться</a>
+        </div>
+      </dialog>
+
+      <dialog id="ev-osadchiy" class="event-modal">
+        <div class="event-modal-head"><button type="button" class="event-modal-close" onclick="lecEvent.close(this)" aria-label="Закрыть">✕</button></div>
+        <div class="event-modal-body">
+          <div class="event-speaker">
+            <span class="avatar-fallback">АО</span>
+            <div>
+              <div class="name">Алексей Осадчий</div>
+              <div class="role">Директор Центра биоэлектрических интерфейсов Института когнитивных нейронаук НИУ ВШЭ, д.ф.-м.н.</div>
+            </div>
+          </div>
+          <p class="muted-line event-date-line" style="margin:0 0 20px;">Дата уточняется · Офлайн, Музей техники Вадима Задорожного</p>
+          <p>Полный анонс встречи скоро появится здесь. Если тема нейротехнологий и ИИ вам интересна — напишите, сообщим о дате первыми.</p>
+          <a href="#tickets-cta" class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="lecEvent.close(this)">Зарегистрироваться</a>
+        </div>
+      </dialog>
+
+      <dialog id="ev-fishman" class="event-modal">
+        <div class="event-modal-head"><button type="button" class="event-modal-close" onclick="lecEvent.close(this)" aria-label="Закрыть">✕</button></div>
+        <div class="event-modal-body">
+          <div class="event-speaker">
+            <span class="avatar-fallback">ВФ</span>
+            <div>
+              <div class="name">Вениамин Фишман</div>
+              <div class="role">Зав. сектором геномных механизмов онтогенеза ИЦиГ СО РАН, д.б.н.</div>
+            </div>
+          </div>
+          <p class="muted-line event-date-line" style="margin:0 0 20px;">Дата уточняется · Офлайн, Музей техники Вадима Задорожного</p>
+          <p>Полный анонс встречи скоро появится здесь. Если тема генетики и ИИ вам интересна — напишите, сообщим о дате первыми.</p>
+          <a href="#tickets-cta" class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="lecEvent.close(this)">Зарегистрироваться</a>
+        </div>
+      </dialog>
+
+      <script>
+        window.lecEvent = {
+          open(id){ document.getElementById(id).showModal(); },
+          close(el){ el.closest('dialog').close(); }
+        };
+        document.querySelectorAll('dialog.event-modal').forEach(function(d){
+          d.addEventListener('click', function(e){ if (e.target === d) d.close(); });
+        });
+      </script>
+
+      <div class="section-head" id="reports" style="margin-top:130px;">
         <h2>Что уже было</h2>
       </div>
 
       <div class="event">
-        <span class="event-date">14 декабря 2025</span>
         <div class="event-grid">
           <div>
-            <span class="event-tag">Офлайн · ресторан «Философия», Москва</span>
+            <span class="event-tag">14 декабря 2025 · Офлайн · Москва</span>
             <h3 style="text-transform:none;">«Бессмертие цифровых двойников»</h3>
             <div class="event-speaker">
               <img class="avatar" src="assets/img/speaker-vorontsov.jpg" alt="Константин Воронцов на встрече лектория">
@@ -246,13 +497,13 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
           <figure><img src="assets/img/event-photo-1.jpg" alt="Гости лектория за общим столом на встрече 14 декабря"></figure>
           <figure><img src="assets/img/event-photo-2.jpg" alt="Константин Воронцов беседует с гостьей лектория"></figure>
         </div>
+        <a href="events/vorontsov-arhiv/" class="btn btn-primary btn-sm" style="margin-top:24px;">Подробнее о встрече →</a>
       </div>
 
       <div class="event">
-        <span class="event-date">26 мая 2026</span>
         <div class="event-grid">
           <div>
-            <span class="event-tag">Онлайн · Яндекс Телемост</span>
+            <span class="event-tag">26 мая 2026 · Онлайн</span>
             <h3 style="text-transform:none;">«Claude Code для непрограммистов»</h3>
             <div class="event-speaker">
               <img class="avatar" src="assets/img/speaker-batrakov.jpg" alt="Игорь Батраков">
@@ -267,44 +518,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             <p class="muted-line" style="margin-top:16px;">По итогам встречи участники получили готовую PDF-инструкцию «Как работать с Claude Code» — установка без бана аккаунта, разбор плагина feature-dev и чек-лист перед каждым запуском.</p>
           </div>
         </div>
-      </div>
-
-      <div class="statement-photo statement-cover full-bleed" style="margin-top:80px;">
-        <div class="statement-bg"><img src="assets/img/bg-lamp.png" alt="" style="object-position:80% center;"></div>
-        <div class="container">
-          <p class="statement-heading">Заходите из&nbsp;настоящего&nbsp;— поговорить о&nbsp;будущем.</p>
-        </div>
-      </div>
-
-      <div class="upcoming-group">
-        <span class="tag-soon">Скоро</span>
-
-        <div class="upcoming-list">
-          <div class="upcoming-item">
-            <h3 style="text-transform:none;margin-bottom:14px;">«ИИ без иллюзий: негативизм, завышенные ожидания и реальность крупного энтерпрайза»</h3>
-            <div class="event-speaker">
-              <img class="avatar" src="assets/img/speaker-feopentov.jpg" alt="Максим Феопентов">
-              <div>
-                <div class="name">Максим Феопентов</div>
-                <div class="role">Директор по развитию цифровых технологий металлургической компании «ЕВРАЗ»</div>
-              </div>
-            </div>
-            <p class="muted-line" style="margin:16px 0 0;">Взгляд изнутри большой индустриальной компании на применение ИИ: что происходит в «кровавом энтерпрайзе», где нет хайпа, а есть процессы, бюджеты, безопасность и ответственность. Дата уточняется.</p>
-          </div>
-
-          <div class="upcoming-item">
-            <h3 style="text-transform:none;margin-bottom:14px;">«Как ИИ делает автомобили безопаснее и удобнее»</h3>
-            <div class="event-speaker">
-              <img class="avatar" src="assets/img/venue-zadorozhny-thumb.jpg" alt="Музей техники Вадима Задорожного">
-              <div>
-                <div class="name">Музей техники Вадима Задорожного</div>
-                <div class="role">Место проведения встречи, Архангельское</div>
-              </div>
-            </div>
-            <p style="margin:16px 0 4px;">Один из сюжетов встречи — беспилотный трамвай, который уже курсирует в Строгино: как устроена система, что изменилось с запуском и куда движется проект. Формат — интервью или выступление (около часа) с дискуссией, рассчитанное на широкую аудиторию.</p>
-            <p class="muted-line" style="margin:0;">Встреча пройдёт в <a href="https://new.tmuseum.ru/" target="_blank" rel="noopener">Музее техники Вадима Задорожного</a> в Архангельском — среди коллекции ретроавтомобилей и исторической техники, где тема транспорта звучит особенно уместно. Спикер и дата уточняются.</p>
-          </div>
-        </div>
+        <a href="events/batrakov-arhiv/" class="btn btn-primary btn-sm" style="margin-top:24px;">Подробнее о встрече →</a>
       </div>
     </div>
   </section>
