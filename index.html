@@ -55,7 +55,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#1a1a1a">
 
-<link rel="stylesheet" href="assets/css/style.v3.css?v=3">
+<link rel="stylesheet" href="assets/css/style.v3.css?v=4">
 </head>
 <body>
 
@@ -64,6 +64,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     <a href="#top" class="logo">Лекторий <em>об ИИ</em></a>
     <ul class="nav-links">
       <li><a href="#about">О проекте</a></li>
+      <li><a href="#audience">Аудитория</a></li>
       <li><a href="#format">Формат</a></li>
       <li><a href="#events">Встречи</a></li>
       <li><a href="#partners">Партнёрам</a></li>
@@ -151,24 +152,188 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
   </section>
 
   <!-- AUDIENCE -->
-  <section class="section section-alt">
+  <section id="audience" class="section section-alt">
     <div class="container">
       <div class="section-head">
         <div class="kicker">Кому подойдёт</div>
-        <h2>Для тех, кто хочет наконец<br>разобраться в ИИ</h2>
+        <h2>Кто приходит на лекторий</h2>
         <p class="lede">Не курс и не конференция — регулярные встречи, где можно спокойно расспросить экспертов и обсудить это с другими.</p>
       </div>
-      <div class="two-col even">
-        <div class="pull">
-          Если вы только разбираетесь в теме
-          <cite style="font-style:normal;font-family:var(--sans);">Хотите понять, что такое ИИ и как он меняет (или уже изменил) вашу жизнь — рабочую и не только.</cite>
+
+      <div class="aud-carousel">
+        <div class="aud-viewport">
+
+          <div class="aud-slide" data-i="0">
+            <span class="aud-num">01 / 05</span>
+            <h3 class="aud-role">Любопытный горожанин</h3>
+            <p class="aud-who">Высшее образование, аудитория научпоп-лекций и книжных клубов</p>
+            <div class="pull">«Хочу проводить вечера интереснее — не сериалы, а что-то, что расширяет кругозор, и где можно поговорить с умными людьми».</div>
+            <div class="aud-cols">
+              <div>
+                <div class="aud-block-label">Боишься, что...</div>
+                <ul class="aud-fears">
+                  <li>«Будет слишком узкоспециально, ничего не пойму»</li>
+                  <li>«Приду одна, и не с кем будет поговорить»</li>
+                  <li>«Это окажется рекламой курсов, а не настоящим разговором»</li>
+                </ul>
+              </div>
+              <div>
+                <div class="aud-block-label">Что получишь</div>
+                <ul class="aud-gets">
+                  <li>Атмосферу интеллектуального клуба, а не лекции в вузе</li>
+                  <li>Разговор, который не требует профильного образования</li>
+                  <li>Новых знакомых со схожими интересами</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="aud-slide" data-i="1" hidden>
+            <span class="aud-num">02 / 05</span>
+            <h3 class="aud-role">Менеджер среднего звена</h3>
+            <p class="aud-who">Маркетолог, продажник, HR, финансист, аналитик — найм, средние и крупные компании</p>
+            <div class="pull">«Все вокруг обсуждают ИИ на работе, а я не понимаю, что реально стоит внедрять, а что хайп. Хочу разобраться — но не с нуля и не по три часа в YouTube».</div>
+            <div class="aud-cols">
+              <div>
+                <div class="aud-block-label">Боишься, что...</div>
+                <ul class="aud-fears">
+                  <li>«Отстану от коллег, которые уже освоили ИИ»</li>
+                  <li>«Потрачу вечер и не пойму ничего нового»</li>
+                  <li>«Приду одна и там будут только айтишники»</li>
+                </ul>
+              </div>
+              <div>
+                <div class="aud-block-label">Что получишь</div>
+                <ul class="aud-gets">
+                  <li>Понятные примеры из рабочих задач, а не абстрактную теорию</li>
+                  <li>Возможность спросить эксперта напрямую, а не гуглить самой</li>
+                  <li>Компанию таких же людей не из IT</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="aud-slide" data-i="2" hidden>
+            <span class="aud-num">03 / 05</span>
+            <h3 class="aud-role">Специалист творческой и гуманитарной профессии</h3>
+            <p class="aud-who">Маркетолог, дизайнер, журналист, редактор, преподаватель</p>
+            <div class="pull">«Моя профессия меняется быстрее, чем я успеваю следить. Хочу понять, что тут всерьёз, а что временный хайп — и как этим пользоваться, а не бояться, что заменят».</div>
+            <div class="aud-cols">
+              <div>
+                <div class="aud-block-label">Боишься, что...</div>
+                <ul class="aud-fears">
+                  <li>«ИИ заменит мою профессию, а я не успею адаптироваться»</li>
+                  <li>«Все вокруг говорят на языке, которого я не понимаю»</li>
+                  <li>«Стану использовать ИИ неправильно и потеряю то, что делает мою работу хорошей»</li>
+                </ul>
+              </div>
+              <div>
+                <div class="aud-block-label">Что получишь</div>
+                <ul class="aud-gets">
+                  <li>Разговор без кода и формул, на понятном языке</li>
+                  <li>Примеры из творческих и гуманитарных профессий</li>
+                  <li>Сообщество людей, которые думают о том же самом</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="aud-slide" data-i="3" hidden>
+            <span class="aud-num">04 / 05</span>
+            <h3 class="aud-role">IT-специалист не из ML</h3>
+            <p class="aud-who">Разработчик, продакт-менеджер, аналитик, дизайнер продукта</p>
+            <div class="pull">«Внутри своей команды я разбираюсь в технологиях, но ИИ — отдельный мир со своим стеком. Хочу увидеть картину шире, не погружаясь в ML с нуля».</div>
+            <div class="aud-cols">
+              <div>
+                <div class="aud-block-label">Боишься, что...</div>
+                <ul class="aud-fears">
+                  <li>«Лекция будет слишком базовой для меня»</li>
+                  <li>«Всё важное я и так узнаю из рабочей рассылки»</li>
+                  <li>«Это будет мотивационная речь без технической сути»</li>
+                </ul>
+              </div>
+              <div>
+                <div class="aud-block-label">Что получишь</div>
+                <ul class="aud-gets">
+                  <li>Экспертный разговор без упрощения — но не про ваш стек</li>
+                  <li>Взгляд на ИИ со стороны бизнеса, культуры, этики</li>
+                  <li>Нетворкинг с людьми вне своего технологического пузыря</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="aud-slide" data-i="4" hidden>
+            <span class="aud-num">05 / 05</span>
+            <h3 class="aud-role">Руководитель и предприниматель</h3>
+            <p class="aud-who">Собственник бизнеса, директор, фаундер — малый и средний бизнес</p>
+            <div class="pull">«Нужно понять, куда в бизнесе реально стоит вкладываться в ИИ, а где это просто мода. Но не хочу очередной вебинар с общими фразами».</div>
+            <div class="aud-cols">
+              <div>
+                <div class="aud-block-label">Боишься, что...</div>
+                <ul class="aud-fears">
+                  <li>«Вложусь в модный инструмент и не получу отдачи»</li>
+                  <li>«Пропущу момент, когда конкуренты вырвутся вперёд»</li>
+                  <li>«Будет теория без практики бизнеса»</li>
+                </ul>
+              </div>
+              <div>
+                <div class="aud-block-label">Что получишь</div>
+                <ul class="aud-gets">
+                  <li>Живые кейсы от практиков, а не маркетинговые обещания</li>
+                  <li>Нетворкинг с другими руководителями</li>
+                  <li>Ясность, с чего начать, без обязательств что-то покупать</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="pull">
-          Если вы из бизнеса*
-          <cite style="font-style:normal;font-family:var(--sans);">Руководителям и предпринимателям, которым нужно стратегическое понимание технологий, а не просто быть в курсе трендов.<br><br><em>* На старте лекторий ориентирован на массовую аудиторию. Отдельное направление для бизнеса планируется на этапе масштабирования.</em></cite>
+
+        <div class="aud-nav">
+          <button type="button" class="aud-arrow aud-prev" onclick="audCarousel.prev()" aria-label="Предыдущий профиль">←</button>
+          <div class="aud-dots">
+            <button type="button" class="aud-dot is-active" data-i="0" onclick="audCarousel.show(0)" aria-label="Профиль 1"></button>
+            <button type="button" class="aud-dot" data-i="1" onclick="audCarousel.show(1)" aria-label="Профиль 2"></button>
+            <button type="button" class="aud-dot" data-i="2" onclick="audCarousel.show(2)" aria-label="Профиль 3"></button>
+            <button type="button" class="aud-dot" data-i="3" onclick="audCarousel.show(3)" aria-label="Профиль 4"></button>
+            <button type="button" class="aud-dot" data-i="4" onclick="audCarousel.show(4)" aria-label="Профиль 5"></button>
+          </div>
+          <button type="button" class="aud-arrow aud-next" onclick="audCarousel.next()" aria-label="Следующий профиль">→</button>
         </div>
       </div>
+
     </div>
+
+    <script>
+      window.audCarousel = {
+        i: 0,
+        slides: null, dots: null,
+        init(){
+          this.slides = document.querySelectorAll('.aud-slide');
+          this.dots = document.querySelectorAll('.aud-dot');
+          var vp = document.querySelector('.aud-viewport');
+          var startX = null;
+          vp.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; }, {passive:true});
+          vp.addEventListener('touchend', function(e){
+            if(startX === null) return;
+            var dx = e.changedTouches[0].clientX - startX;
+            if(dx > 40) audCarousel.prev();
+            else if(dx < -40) audCarousel.next();
+            startX = null;
+          }, {passive:true});
+        },
+        show(n){
+          var count = this.slides.length;
+          this.i = (n + count) % count;
+          this.slides.forEach(function(s, idx){ s.hidden = (idx !== audCarousel.i); });
+          this.dots.forEach(function(d, idx){ d.classList.toggle('is-active', idx === audCarousel.i); });
+        },
+        next(){ this.show(this.i + 1); },
+        prev(){ this.show(this.i - 1); }
+      };
+      audCarousel.init();
+    </script>
   </section>
 
   <!-- FORMAT -->
