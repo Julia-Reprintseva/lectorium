@@ -346,6 +346,17 @@ header.site{position:sticky;top:0;z-index:50;background:var(--bg);}
 .author-photo img{width:100%;object-fit:cover;}
 .author-cred{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:36px 0 14px;}
 
+/* Мост на личный сайт Юлии — стоит сразу после абзаца про её работу с ИИ,
+   там, где читатель уже заинтересовался и ищет продолжение. */
+.author-link{margin:18px 0 0;}
+.author-link a{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:.86rem;color:var(--accent);text-decoration:none;
+  border-bottom:1px solid transparent;padding-bottom:2px;
+  transition:border-color .15s;
+}
+.author-link a:hover{border-bottom-color:var(--accent);}
+
 /* CTA */
 .cta-band{padding:100px 0;text-align:center;}
 .cta-band h2{max-width:18ch;margin:0 auto .3em;}
