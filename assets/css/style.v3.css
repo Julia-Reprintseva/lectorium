@@ -402,6 +402,13 @@ header.site{position:sticky;top:0;z-index:50;background:var(--bg);}
 
 footer.site{padding:36px 0;background:var(--ink);color:#a89e8c;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;}
 footer.site .foot-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+/* Ссылки держим одной группой: при четырёх отдельных элементах последняя
+   не помещалась в строку и повисала на второй одна, слева. */
+footer.site .foot-links{display:flex;flex-wrap:wrap;gap:10px 24px;}
+@media (max-width:1100px){
+  footer.site .foot-row{justify-content:center;text-align:center;}
+  footer.site .foot-links{justify-content:center;}
+}
 
 /* Responsive */
 @media (max-width: 900px){
